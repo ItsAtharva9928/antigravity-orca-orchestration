@@ -102,7 +102,8 @@ These instructions apply to the primary orchestrator and every delegated subagen
   - Use `agent-browser` for all web interaction and UI flow testing.
   - Use `ast-grep` and `rg` to cross-reference DOM selectors with source components.
   - Use `agent-browser snapshot` to retrieve accessibility trees and compact `@eN` element references for precise clicks and form inputs.
-  - Use `agent-browser screenshot <path>` to capture visual proof of UI behavior or regression.
+  - Save all visual proof and screenshots into the dedicated `.browser-screenshots/` folder (e.g. `agent-browser screenshot .browser-screenshots/<view-name>.png`).
+  - Strict Git Exclusion: NEVER stage, add, or commit `.browser-screenshots/` or any `.png` files to git. Ensure `.browser-screenshots/` is listed in `.gitignore`.
   - Audit accessibility with `agent-browser a11y [url] --json` and performance with `agent-browser vitals [url]`.
   - For React applications, leverage React DevTools introspection (`agent-browser react tree`, `agent-browser react inspect <id>`).
   - Test only the specific affected UI views and user flows requested. Do not run unassigned full crawls.
@@ -117,3 +118,4 @@ The following commands are strictly prohibited across all agents and sessions:
 - Destructive git actions: `git reset --hard`, `git clean -f`, `git push --force`, `git push -f`.
 - Low-level disk formatting: `mkfs`, `dd if=`, `format`.
 - Uncontrolled fork bombs: `:(){ :|:& };:`.
+

@@ -75,7 +75,7 @@ Every agent has full, unrestricted access to the complete CLI engineering suite:
 
 - **`ast-grep` (`sg`)**: AST syntax-tree searching, structural code pattern matching, function/class relationship tracing, and multi-file precision refactoring.
 - **`biome`**: Ultra-fast formatting and syntax/import/type auto-healing (`biome check --write <path>`).
-- **`agent-browser`**: Headless/headed Chrome automation, accessibility-tree snapshots (`agent-browser snapshot -i`), screenshot proof, Web Vitals, and DOM verification.
+- **`agent-browser`**: Headless/headed Chrome automation, accessibility-tree snapshots (`agent-browser snapshot -i`), screenshot proof saved to `.browser-screenshots/` (strictly excluded from git), Web Vitals, and DOM verification.
 - **`rg` (ripgrep) & `fd`**: Lightning-fast symbol searching, regex scanning, and filesystem traversal.
 - **`orca` CLI**: Worktree terminal creation and asynchronous task coordination.
 - **`caveman` & `ponytail` Skills**: Token-compressed output (`caveman`) and anti-overengineering software simplicity (`ponytail`).
@@ -141,3 +141,4 @@ Installed plugins:
 ## License
 
 MIT (c) 2026 Antigravity Multi-Agent Orchestration Contributors.
+

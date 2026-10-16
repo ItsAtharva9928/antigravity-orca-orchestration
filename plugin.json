@@ -1,0 +1,8 @@
+{
+    "author":  {
+                   "name":  "Vivek"
+               },
+    "description":  "Two-tier multi-agent orchestration architecture matching OpenCode: Orca dispatcher, Sol orchestrator, specialized workers (deep, fast, test, review, research, browser-qa), zero-redundancy rules, and safety guardrails.",
+    "name":  "multi-agent-orchestrator",
+    "version":  "1.0.0"
+}
